@@ -1,0 +1,163 @@
+var wms_layers = [];
+
+
+        var lyr_OpenStreetMap_0 = new ol.layer.Tile({
+            'title': 'OpenStreetMap',
+            'opacity': 0.518000,
+            
+            
+            source: new ol.source.XYZ({
+            attributions: ' ',
+                url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+            })
+        });
+var format_CUEkmz_1 = new ol.format.GeoJSON();
+var features_CUEkmz_1 = format_CUEkmz_1.readFeatures(json_CUEkmz_1, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_CUEkmz_1 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_CUEkmz_1.addFeatures(features_CUEkmz_1);
+var lyr_CUEkmz_1 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_CUEkmz_1, 
+                style: style_CUEkmz_1,
+                popuplayertitle: 'CUE.kmz',
+                interactive: true,
+                title: '<img src="styles/legend/CUEkmz_1.png" /> CUE.kmz'
+            });
+var format_contours_2 = new ol.format.GeoJSON();
+var features_contours_2 = format_contours_2.readFeatures(json_contours_2, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_contours_2 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_contours_2.addFeatures(features_contours_2);
+var lyr_contours_2 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_contours_2, 
+                style: style_contours_2,
+                popuplayertitle: 'contours',
+                interactive: true,
+                title: '<img src="styles/legend/contours_2.png" /> contours'
+            });
+var format_Flux_3 = new ol.format.GeoJSON();
+var features_Flux_3 = format_Flux_3.readFeatures(json_Flux_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Flux_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Flux_3.addFeatures(features_Flux_3);
+var lyr_Flux_3 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Flux_3, 
+                style: style_Flux_3,
+                popuplayertitle: 'Flux',
+                interactive: true,
+                title: '<img src="styles/legend/Flux_3.png" /> Flux'
+            });
+var format_p10_4 = new ol.format.GeoJSON();
+var features_p10_4 = format_p10_4.readFeatures(json_p10_4, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_p10_4 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_p10_4.addFeatures(features_p10_4);
+var lyr_p10_4 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_p10_4, 
+                style: style_p10_4,
+                popuplayertitle: 'p10',
+                interactive: true,
+                title: '<img src="styles/legend/p10_4.png" /> p10'
+            });
+var format_Voiesbitumesnonpraticable_5 = new ol.format.GeoJSON();
+var features_Voiesbitumesnonpraticable_5 = format_Voiesbitumesnonpraticable_5.readFeatures(json_Voiesbitumesnonpraticable_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Voiesbitumesnonpraticable_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Voiesbitumesnonpraticable_5.addFeatures(features_Voiesbitumesnonpraticable_5);
+var lyr_Voiesbitumesnonpraticable_5 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Voiesbitumesnonpraticable_5, 
+                style: style_Voiesbitumesnonpraticable_5,
+                popuplayertitle: 'Voies bitumées non praticable',
+                interactive: true,
+                title: '<img src="styles/legend/Voiesbitumesnonpraticable_5.png" /> Voies bitumées non praticable'
+            });
+var format_D3_6 = new ol.format.GeoJSON();
+var features_D3_6 = format_D3_6.readFeatures(json_D3_6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_D3_6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_D3_6.addFeatures(features_D3_6);
+var lyr_D3_6 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_D3_6, 
+                style: style_D3_6,
+                popuplayertitle: 'D3',
+                interactive: true,
+                title: '<img src="styles/legend/D3_6.png" /> D3'
+            });
+var format_voiessecondaires_7 = new ol.format.GeoJSON();
+var features_voiessecondaires_7 = format_voiessecondaires_7.readFeatures(json_voiessecondaires_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_voiessecondaires_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_voiessecondaires_7.addFeatures(features_voiessecondaires_7);
+var lyr_voiessecondaires_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_voiessecondaires_7, 
+                style: style_voiessecondaires_7,
+                popuplayertitle: 'voies secondaires',
+                interactive: true,
+                title: '<img src="styles/legend/voiessecondaires_7.png" /> voies secondaires'
+            });
+var format_voiebitumepraticable_8 = new ol.format.GeoJSON();
+var features_voiebitumepraticable_8 = format_voiebitumepraticable_8.readFeatures(json_voiebitumepraticable_8, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_voiebitumepraticable_8 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_voiebitumepraticable_8.addFeatures(features_voiebitumepraticable_8);
+var lyr_voiebitumepraticable_8 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_voiebitumepraticable_8, 
+                style: style_voiebitumepraticable_8,
+                popuplayertitle: 'voie bitumée praticable',
+                interactive: true,
+                title: '<img src="styles/legend/voiebitumepraticable_8.png" /> voie bitumée praticable'
+            });
+
+lyr_OpenStreetMap_0.setVisible(true);lyr_CUEkmz_1.setVisible(true);lyr_contours_2.setVisible(true);lyr_Flux_3.setVisible(true);lyr_p10_4.setVisible(true);lyr_Voiesbitumesnonpraticable_5.setVisible(true);lyr_D3_6.setVisible(true);lyr_voiessecondaires_7.setVisible(true);lyr_voiebitumepraticable_8.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_CUEkmz_1,lyr_contours_2,lyr_Flux_3,lyr_p10_4,lyr_Voiesbitumesnonpraticable_5,lyr_D3_6,lyr_voiessecondaires_7,lyr_voiebitumepraticable_8];
+lyr_CUEkmz_1.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_contours_2.set('fieldAliases', {'NAME': 'NAME', 'LAYER': 'LAYER', 'ELEVATION': 'ELEVATION', 'CLOSED_CON': 'CLOSED_CON', });
+lyr_Flux_3.set('fieldAliases', {'id': 'id', });
+lyr_p10_4.set('fieldAliases', {'id': 'id', });
+lyr_Voiesbitumesnonpraticable_5.set('fieldAliases', {'id': 'id', });
+lyr_D3_6.set('fieldAliases', {'id': 'id', });
+lyr_voiessecondaires_7.set('fieldAliases', {'id': 'id', });
+lyr_voiebitumepraticable_8.set('fieldAliases', {'id': 'id', });
+lyr_CUEkmz_1.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_contours_2.set('fieldImages', {'NAME': 'TextEdit', 'LAYER': 'TextEdit', 'ELEVATION': 'TextEdit', 'CLOSED_CON': 'TextEdit', });
+lyr_Flux_3.set('fieldImages', {'id': 'TextEdit', });
+lyr_p10_4.set('fieldImages', {'id': 'TextEdit', });
+lyr_Voiesbitumesnonpraticable_5.set('fieldImages', {'id': 'TextEdit', });
+lyr_D3_6.set('fieldImages', {'id': 'TextEdit', });
+lyr_voiessecondaires_7.set('fieldImages', {'id': 'TextEdit', });
+lyr_voiebitumepraticable_8.set('fieldImages', {'id': 'TextEdit', });
+lyr_CUEkmz_1.set('fieldLabels', {'Name': 'header label - always visible', 'description': 'header label - always visible', 'timestamp': 'header label - always visible', 'begin': 'header label - always visible', 'end': 'header label - always visible', 'altitudeMode': 'header label - always visible', 'tessellate': 'header label - always visible', 'extrude': 'header label - always visible', 'visibility': 'header label - always visible', 'drawOrder': 'header label - always visible', 'icon': 'header label - always visible', });
+lyr_contours_2.set('fieldLabels', {'NAME': 'header label - always visible', 'LAYER': 'header label - always visible', 'ELEVATION': 'header label - always visible', 'CLOSED_CON': 'header label - always visible', });
+lyr_Flux_3.set('fieldLabels', {'id': 'header label - always visible', });
+lyr_p10_4.set('fieldLabels', {'id': 'header label - always visible', });
+lyr_Voiesbitumesnonpraticable_5.set('fieldLabels', {'id': 'header label - always visible', });
+lyr_D3_6.set('fieldLabels', {'id': 'header label - always visible', });
+lyr_voiessecondaires_7.set('fieldLabels', {'id': 'header label - always visible', });
+lyr_voiebitumepraticable_8.set('fieldLabels', {'id': 'header label - always visible', });
+lyr_voiebitumepraticable_8.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});
